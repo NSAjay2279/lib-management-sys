@@ -10,5 +10,5 @@ with open("favorites.csv", "r") as file:
         favorite = row["language"]
         counts[favorite] += 1
 
-for favorite in sorted(counts, key=counts.get, reverse=True):
-    print(f"{favorite}: {counts[favorite]}")
+for favorite, count in counts.most_common():
+    print(f"{favorite}: {counts}")
