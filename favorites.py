@@ -12,3 +12,7 @@ with open("favorites.csv", "r") as file:
             c += 1
         elif favorite == "Python":
             python += 1
+
+print(f"Scratch: {scratch}")
+print(f"C: {c}")
+print(f"Python: {python}")
