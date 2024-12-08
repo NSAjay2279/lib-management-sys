@@ -11,4 +11,4 @@ with open("favorites.csv", "r") as file:
         counts[favorite] += 1
 
 for favorite, count in counts.most_common():
-    print(f"{favorite}: {counts}")
+    print(f"{favorite}: {count}")
